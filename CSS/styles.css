@@ -23,6 +23,7 @@
     font-weight: 100;
     font-size: 3rem;
     margin: 10px 0 10px 0;
+    text-align: center;
 }
 body {
   background-image: url(../Assets/bg-final.svg);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- connecting server & client -->
+    <!-- adding defer to script to load in background -->
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./JS/client.js"></script>
+    <!-- <script defer src="./JS/scroll.js"></script> -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  </head>
+  <body>
+    <nav>
+      <img src="./Assets/chat.svg" alt="Logo" class="logo" />
+      <h1 class="heading">Welcome in chat room!</h1>
+    </nav>
+    <div class="wrap">
+      <!-- messages container  -->
+      <div class="container">
+          <!-- <div class="scroll-bar">
+              <div class="thumb"></div>
+          </div> -->
+        <!-- <div class="message right">Ayan: Hey How are you?</div> -->
+        <!-- <div class="message left">Yash: Yeah I am fine!</div> -->
+
+      </div>
+      <!-- send message input  -->
+      <div class="send">
+        <input  type="text" name="messageInp" id="messageInp" placeholder="Enter your message!"/>
+        <button class="btn" type="submit">Send</button>
+      </div>
+    </div>
+  </body>
+</html>

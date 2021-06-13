@@ -27,6 +27,8 @@ const append = (message, position, join) => {
     if(position === 'left'){
         audio.play();
     }
+    //scroll down
+    messageContainer.scrollTo(0, messageContainer.scrollHeight);
 }
 // send message event(if someones send message)
 button.addEventListener('click', (e)=>{
